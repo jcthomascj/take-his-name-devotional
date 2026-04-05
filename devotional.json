@@ -1,162 +1,23 @@
 [
   {
     "name": "The Rock",
-    "scriptures": ["Psalms 18:2", "Helaman 5:12"],
+    "scriptures": [
+      { "text": "Psalms 18:2", "url": "https://www.churchofjesuschrist.org/study/scriptures/bible/psalms/18.2" },
+      { "text": "Helaman 5:12", "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/helaman/5.12" }
+    ],
     "reflection": "When I feel weak, I can stand firm because He is my foundation.",
     "hymn": "I Know That My Redeemer Lives",
     "hymnNumber": 136,
     "checkboxId": "day1"
   },
   {
-    "name": "The Light",
-    "scriptures": ["John 8:12", "Mosiah 16:9"],
-    "reflection": "Even in darkness, His light guides me and gives clarity to my path.",
-    "hymn": "Come, Follow Me",
-    "hymnNumber": 116,
-    "checkboxId": "day2"
-  },
-  {
     "name": "Surety",
-    "scriptures": ["Hebrews 7:22", "Ether 3:14"],
+    "scriptures": [
+      { "text": "Hebrews 7:22", "url": "https://www.churchofjesuschrist.org/study/scriptures/bible/hebrews/7.22" },
+      { "text": "Ether 3:14", "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/3.14" }
+    ],
     "reflection": "I can be confident in His promises; He is my surety before the Father.",
-    "hymn": "Arise, My Soul, Arise",
-    "hymnNumber": 179,
-    "checkboxId": "day3"
-  },
-  {
-    "name": "Mercy",
-    "scriptures": ["James 2:13", "Alma 34:16-17"],
-    "reflection": "Through His mercy, I find forgiveness and hope every day.",
-    "hymn": "Lord, I Would Follow Thee",
-    "hymnNumber": 220,
-    "checkboxId": "day4"
-  },
-  {
-    "name": "The Good Shepherd",
-    "scriptures": ["John 10:11", "3 Nephi 15:5"],
-    "reflection": "He leads me safely through life, caring for me personally.",
-    "hymn": "I Heard the Voice of Jesus Say",
-    "hymnNumber": 182,
-    "checkboxId": "day5"
-  },
-  {
-    "name": "Strength",
-    "scriptures": ["Isaiah 40:31", "Ether 12:27"],
-    "reflection": "His strength lifts me when I am weary and helps me endure trials.",
-    "hymn": "Be Still, My Soul",
-    "hymnNumber": 124,
-    "checkboxId": "day6"
-  },
-  {
-    "name": "The Savior",
-    "scriptures": ["Luke 2:11", "Mosiah 3:17"],
-    "reflection": "He saves me from sin and guides me to everlasting life.",
-    "hymn": "O Savior, Thou Who Wearest a Crown",
-    "hymnNumber": 111,
-    "checkboxId": "day7"
-  },
-  {
-    "name": "Redeemer",
-    "scriptures": ["Isaiah 44:22", "Mosiah 18:9"],
-    "reflection": "I am redeemed through His love and His atonement.",
-    "hymn": "Redeemer of Israel",
-    "hymnNumber": 4,
-    "checkboxId": "day8"
-  },
-  {
-    "name": "Bread of Life",
-    "scriptures": ["John 6:35", "3 Nephi 20:8"],
-    "reflection": "He nourishes my soul and gives me eternal satisfaction.",
-    "hymn": "Ye Who Are Called to Labor",
-    "hymnNumber": 221,
-    "checkboxId": "day9"
-  },
-  {
-    "name": "Living Water",
-    "scriptures": ["John 4:14", "Mosiah 18:9"],
-    "reflection": "His living water refreshes me and quenches my spiritual thirst.",
-    "hymn": "Come Unto Jesus",
-    "hymnNumber": 123,
-    "checkboxId": "day10"
-  },
-  {
-    "name": "The Way",
-    "scriptures": ["John 14:6", "Ether 3:16"],
-    "reflection": "He is the path I follow to return to the Father.",
-    "hymn": "I Believe in Christ",
-    "hymnNumber": 134,
-    "checkboxId": "day11"
-  },
-  {
-    "name": "The Truth",
-    "scriptures": ["John 14:6", "Mosiah 16:9"],
-    "reflection": "He is the ultimate source of truth in my life.",
-    "hymn": "How Firm a Foundation",
-    "hymnNumber": 85,
-    "checkboxId": "day12"
-  },
-  {
-    "name": "The Life",
-    "scriptures": ["John 14:6", "Mosiah 18:9"],
-    "reflection": "In Him I find life eternal and peace beyond the world.",
-    "hymn": "I Know That My Redeemer Lives",
-    "hymnNumber": 136,
-    "checkboxId": "day13"
-  },
-  {
-    "name": "The Alpha and Omega",
-    "scriptures": ["Revelation 22:13", "Ether 3:14"],
-    "reflection": "He was there at the beginning and will be there at the end.",
-    "hymn": "O Lord, Our Lord",
-    "hymnNumber": 2,
-    "checkboxId": "day14"
-  },
-  {
-    "name": "The King of Kings",
-    "scriptures": ["1 Timothy 6:15", "Mosiah 15:1"],
-    "reflection": "He rules all things with love and justice.",
-    "hymn": "Crown Him with Many Crowns",
-    "hymnNumber": 86,
-    "checkboxId": "day15"
-  },
-  {
-    "name": "The Lord Omnipotent",
-    "scriptures": ["Revelation 19:6", "Ether 3:14"],
-    "reflection": "His power is unlimited and He strengthens me when I am weak.",
-    "hymn": "O Mighty God",
-    "hymnNumber": 110,
-    "checkboxId": "day16"
-  },
-  {
-    "name": "The Almighty",
-    "scriptures": ["Genesis 17:1", "Ether 12:27"],
-    "reflection": "He is my Almighty God who holds all things in His hands.",
-    "hymn": "Almighty God, Our Father",
-    "hymnNumber": 2,
-    "checkboxId": "day17"
-  },
-  {
-    "name": "The Holy One of Israel",
-    "scriptures": ["Isaiah 43:3", "Mosiah 15:9"],
-    "reflection": "He sanctifies me and calls me to be holy.",
-    "hymn": "Come, Thou Holy Spirit",
-    "hymnNumber": 136,
-    "checkboxId": "day18"
-  },
-  {
-    "name": "The Lamb of God",
-    "scriptures": ["John 1:29", "Mosiah 14:7"],
-    "reflection": "He willingly takes upon Himself my sins and redeems me.",
-    "hymn": "The Lord My Pasture Will Prepare",
-    "hymnNumber": 116,
-    "checkboxId": "day19"
-  },
-  {
-    "name": "The Friend",
-    "scriptures": ["John 15:13", "Mosiah 18:9"],
-    "reflection": "He lays down His life for me and stands beside me as a true friend.",
-    "hymn": "Jesus, Once of Humble Birth",
-    "hymnNumber": 197,
-    "checkboxId": "day20"
+    "hymn": "Arise, My Soul, Arise (not in LDS hymnal)",
+    "checkboxId": "day2"
   }
 ]
