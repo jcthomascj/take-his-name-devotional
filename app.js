@@ -1,5 +1,3 @@
-// app.js
-
 // Load devotional JSON
 fetch('devotional.json')
   .then(response => response.json())
@@ -16,25 +14,9 @@ fetch('devotional.json')
       title.textContent = item.name;
       card.appendChild(title);
 
-     // Scriptures
+      // Scriptures (clickable)
       const scriptures = document.createElement('p');
       scriptures.innerHTML = `<strong>Scriptures:</strong> ${item.scriptures.map(s => `<a href="${s.url}" target="_blank">${s.text}</a>`).join(", ")}`;
-      card.appendChild(scriptures);
-        
-        const isBible = bibleBooks.some(book => s.startsWith(book));
-        let bookPart = s.split(" ")[0];
-        let chapterVerse = s.split(" ")[1] || "";
-        chapterVerse = chapterVerse.replace(":", ".");
-        
-        let url = "";
-        if (isBible) {
-          url = `https://www.churchofjesuschrist.org/study/scriptures/bible/${bookPart.toLowerCase()}-${chapterVerse}`;
-        } else {
-          // Book of Mormon / D&C
-          url = `https://www.churchofjesuschrist.org/study/scriptures/bofm/${bookPart.toLowerCase()}-${chapterVerse}`;
-        }
-        return `<a href="${url}" target="_blank">${s}</a>`;
-      }).join(", ")}`;
       card.appendChild(scriptures);
 
       // Reflection
