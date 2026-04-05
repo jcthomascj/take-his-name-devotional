@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take His Name Upon You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Take His Name Upon You</h1>
+      <p class="subtitle">
+        A daily devotional journey through the names and titles of Jesus Christ ✨
+      </p>
+    </header>
+
+    <main id="devotional-container">
+      <p class="loading">Loading devotionals...</p>
+    </main>
+  </div>
+
+  <template id="devotional-template">
+    <section class="card">
+      <div class="card-header">
+        <div>
+          <p class="day"></p>
+          <h2 class="name"></h2>
+        </div>
+        <label class="checkbox-wrap">
+          <input type="checkbox" class="complete-checkbox" />
+          <span>Completed</span>
+        </label>
+      </div>
+
+      <div class="card-body">
+        <p><strong>Category:</strong> <span class="category"></span></p>
+
+        <p>
+          <strong>Scripture:</strong>
+          <a class="scripture-link" target="_blank"></a>
+        </p>
+
+        <p>
+          <strong>Reflect:</strong>
+          <span class="reflection"></span>
+        </p>
+
+        <p>
+          <strong>Today's Invitation:</strong>
+          <span class="action"></span>
+        </p>
+
+        <p>
+          <strong>Hymn:</strong>
+          <a class="hymn-link" target="_blank"></a>
+        </p>
+      </div>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
