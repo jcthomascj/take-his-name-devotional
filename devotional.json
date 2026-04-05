@@ -1,47 +1,37 @@
 [
   {
-    "day": 1,
     "name": "The Rock",
-    "scripture": {
-      "reference": "Psalm 18:2",
-      "link": "https://www.churchofjesuschrist.org/study/scriptures/ot/ps/18.2?lang=eng"
-    },
-    "reflection": "Where do I feel weak or unstable?",
-    "action_prayer": "Surrender one fear to Christ today, trusting His strength.",
-    "category": "Strength",
-    "hymn": {
-      "title": "I Know That My Redeemer Lives",
-      "link": "https://www.churchofjesuschrist.org/music/library/hymns/i-know-that-my-redeemer-lives?lang=eng"
-    }
+    "scriptures": ["Ether 12:27", "Helaman 5:12"],
+    "reflection": "When I feel weak, I can stand firm because He is my foundation.",
+    "hymn": "I Know That My Redeemer Lives",
+    "checkboxId": "day1"
   },
   {
-    "day": 2,
-    "name": "My Strength",
-    "scripture": {
-      "reference": "Psalm 27:1",
-      "link": "https://www.churchofjesuschrist.org/study/scriptures/ot/ps/27.1?lang=eng"
-    },
-    "reflection": "How can I rely on Christ’s power instead of my own?",
-    "action_prayer": "Repeat 'Christ is my strength' during a challenging moment today.",
-    "category": "Strength",
-    "hymn": {
-      "title": "Praise to the Lord, the Almighty",
-      "link": "https://www.churchofjesuschrist.org/music/library/hymns/praise-to-the-lord-the-almighty?lang=eng"
-    }
+    "name": "The Light",
+    "scriptures": ["John 8:12", "Mosiah 16:9"],
+    "reflection": "Even in darkness, His light guides me.",
+    "hymn": "Come, Follow Me",
+    "checkboxId": "day2"
   },
   {
-    "day": 3,
-    "name": "My Shield",
-    "scripture": {
-      "reference": "Psalm 3:3",
-      "link": "https://www.churchofjesuschrist.org/study/scriptures/ot/ps/3.3?lang=eng"
-    },
-    "reflection": "Where am I vulnerable?",
-    "action_prayer": "Visualize Christ as a shield around that area today.",
-    "category": "Strength",
-    "hymn": {
-      "title": "Be Still, My Soul",
-      "link": "https://www.churchofjesuschrist.org/music/library/hymns/be-still-my-soul?lang=eng"
-    }
+    "name": "Surety",
+    "scriptures": ["Mosiah 18:9", "Alma 13:3"],
+    "reflection": "I am confident in His promises, He stands for me before the Father.",
+    "hymn": "Arise, My Soul, Arise",
+    "checkboxId": "day3"
+  },
+  {
+    "name": "Mercy",
+    "scriptures": ["James 2:13", "Alma 34:16-17"],
+    "reflection": "Through His mercy, I find forgiveness and hope every day.",
+    "hymn": "Lord, I Would Follow Thee",
+    "checkboxId": "day4"
+  },
+  {
+    "name": "The Good Shepherd",
+    "scriptures": ["John 10:11", "3 Nephi 15:5"],
+    "reflection": "He leads me safely through life, caring for me personally.",
+    "hymn": "I Heard the Voice of Jesus Say",
+    "checkboxId": "day5"
   }
 ]
