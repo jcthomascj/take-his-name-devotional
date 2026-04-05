@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take His Name Upon You</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .card p {
+      line-height: 1.5;
+      color: #555;
+    }
+    .card a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .checkbox-container {
+      margin-top: 15px;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      margin-right: 10px;
+    }
+  </style>
+</head>
 <body>
   <div class="container">
     <header>
       <h1>Take His Name Upon You</h1>
       <p class="subtitle">
-        A daily devotional journey through the names and titles of Jesus Christ ✨
+        “… that they are willing to take upon them the <strong>name</strong> of thy Son…” (emphasis added)
+        <br><br>
+        What name(s) of the Son are you willing to take upon yourself this week?
       </p>
     </header>
+
     <main id="devotional-container">
-      <p class="loading">Loading devotionals...</p>
+      <!-- Devotional cards will be inserted here by app.js -->
     </main>
   </div>
-
-  <template id="devotional-template">
-    <section class="card">
-      <div class="card-header">
-        <div>
-          <p class="day"></p>
-          <h2 class="name"></h2>
-        </div>
-        <label class="checkbox-wrap">
-          <input type="checkbox" class="complete-checkbox" />
-          <span>Completed</span>
-        </label>
-      </div>
-
-      <div class="card-body">
-        <p><strong>Category:</strong> <span class="category"></span></p>
-
-        <p>
-          <strong>Scripture:</strong>
-          <a class="scripture-link" target="_blank"></a>
-        </p>
-
-        <p>
-          <strong>Reflect:</strong>
-          <span class="reflection"></span>
-        </p>
-
-        <p>
-          <strong>Today's Invitation:</strong>
-          <span class="action"></span>
-        </p>
-
-        <p>
-          <strong>Hymn:</strong>
-          <a class="hymn-link" target="_blank"></a>
-        </p>
-      </div>
-    </section>
-  </template>
 
   <script src="app.js"></script>
 </body>
