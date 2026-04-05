@@ -1,33 +1,45 @@
-const container = document.getElementById('devotional-container');
+// Get the container where all cards will appear
+const container = document.getElementById("devotional-container");
 
+// Fetch the devotional JSON
 fetch('devotional.json')
   .then(response => response.json())
-  .then(data => renderDevotional(data));
+  .then(data => {
+    data.forEach(item => {
+      // Create card
+      const card = document.createElement('div');
+      card.className = 'card';
 
-function renderDevotional(days) {
-  days.forEach(day => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+      // Name
+      const nameEl = document.createElement('h2');
+      nameEl.textContent = item.name;
+      card.appendChild(nameEl);
 
-    const checked = localStorage.getItem(`day-${day.day}`) === 'true' ? 'checked' : '';
+      // Scriptures
+      const scriptureEl = document.createElement('p');
+      scriptureEl.innerHTML = item.scriptures
+        .map(s => `<a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng&q=${encodeURIComponent(s)}" target="_blank">${s}</a>`)
+        .join(' | ');
+      card.appendChild(scriptureEl);
 
-    card.innerHTML = `
-      <h2>Day ${day.day}: ${day.name}</h2>
-      <p><strong>Scripture:</strong> <a href="${day.scripture.link}" target="_blank">${day.scripture.reference}</a></p>
-      <p><strong>Reflection:</strong> ${day.reflection}</p>
-      <p><strong>Action/Prayer:</strong> ${day.action_prayer}</p>
-      <p><strong>Hymn:</strong> <a href="${day.hymn.link}" target="_blank">${day.hymn.title}</a></p>
-      <div class="checkbox-container">
-        <input type="checkbox" id="day-${day.day}" ${checked}>
-        <label for="day-${day.day}">Completed</label>
-      </div>
-    `;
+      // Reflection
+      const reflectionEl = document.createElement('p');
+      reflectionEl.textContent = item.reflection;
+      card.appendChild(reflectionEl);
 
-    container.appendChild(card);
+      // Hymn
+      const hymnEl = document.createElement('p');
+      hymnEl.innerHTML = `<a href="https://www.churchofjesuschrist.org/music/library/hymns/${encodeURIComponent(item.hymn)}" target="_blank">${item.hymn}</a>`;
+      card.appendChild(hymnEl);
 
-    const checkbox = card.querySelector('input[type="checkbox"]');
-    checkbox.addEventListener('change', () => {
-      localStorage.setItem(`day-${day.day}`, checkbox.checked);
+      // Checkbox
+      const checkboxContainer = document.createElement('div');
+      checkboxContainer.className = 'checkbox-container';
+      checkboxContainer.innerHTML = `<input type="checkbox" id="${item.checkboxId}"> Completed`;
+      card.appendChild(checkboxContainer);
+
+      // Add card to container
+      container.appendChild(card);
     });
-  });
-}
+  })
+  .catch(err => console.error("Error loading devotional JSON:", err));
