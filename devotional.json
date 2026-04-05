@@ -19,19 +19,5 @@
     "reflection": "I am confident in His promises, He stands for me before the Father.",
     "hymn": "Arise, My Soul, Arise",
     "checkboxId": "day3"
-  },
-  {
-    "name": "Mercy",
-    "scriptures": ["James 2:13", "Alma 34:16-17"],
-    "reflection": "Through His mercy, I find forgiveness and hope every day.",
-    "hymn": "Lord, I Would Follow Thee",
-    "checkboxId": "day4"
-  },
-  {
-    "name": "The Good Shepherd",
-    "scriptures": ["John 10:11", "3 Nephi 15:5"],
-    "reflection": "He leads me safely through life, caring for me personally.",
-    "hymn": "I Heard the Voice of Jesus Say",
-    "checkboxId": "day5"
   }
 ]
