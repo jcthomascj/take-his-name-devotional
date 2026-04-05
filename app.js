@@ -29,7 +29,7 @@ fetch('devotional.json')
 
       // Hymn
       const hymnEl = document.createElement('p');
-      hymnEl.innerHTML = `<a href="https://www.churchofjesuschrist.org/music/library/hymns/${encodeURIComponent(item.hymn)}" target="_blank">${item.hymn}</a>`;
+      hymnEl.innerHTML = `<a href="https://www.churchofjesuschrist.org/music/library/hymns/${item.hymnNumber}" target="_blank">${item.hymn}</a>`;
       card.appendChild(hymnEl);
 
       // Checkbox
